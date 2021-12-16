@@ -9,7 +9,11 @@ namespace CalculatePricePerDayOfBootcamp
 			var CostOfBootcamp = 15500m;
 			var NumberOfDays = 65;
 			var PricePerDay = CostOfBootcamp / NumberOfDays;
-			Console.WriteLine($"The boot camp costs {PricePerDay} per day.");
+			var PreMessage = "The boot camp costs ";
+			var PostMessage = " per day.";
+			var Message = $"{PreMessage}{PricePerDay}{PostMessage}";
+			Console.WriteLine($"{Message}");
+			System.Diagnostics.Debug.WriteLine($"{Message}");
 		}
 	}
 }
